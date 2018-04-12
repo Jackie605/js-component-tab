@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tab Component</title>
+	<script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.js"></script>
+
+	<style>
+	* {
+		margin: 0;
+		padding:0;
+		box-sizing: border-box;
+	}
+	.tab-container {
+		display: none;
+	}
+    ul {
+    	list-style: none;
+    	height: 30px;
+    }
+    ul:after {
+    	content:'';
+    	display: block;
+    	clear: both;
+    }
+
+    li {
+    	width: 50px;
+    	border: 1px solid #000;
+    	border-right: 0;
+    	border-bottom: 0;
+    	float: left;
+    	height: 100%;
+    	text-align: center;
+    	line-height: 30px;
+    	box-shadow: 0 0 2px 2px rgba(255,255,255,0.2);
+    	cursor: pointer;
+    }
+    li:last-child {
+    	border-right: 1px solid #000;
+    }
+    li.active {
+    	background: orange;
+    }
+
+    .text {
+    	width: 800px;
+    	height: 300px;
+    	border: 1px solid #000;
+    }
+    p {
+    	display: none;
+    }
+    p.active {
+    	display: block;
+    }
+
+
+	</style>
+</head>
+<body>
+	<div class="tab-container active">
+		<h1>标题1</h1>
+		<p>文本1</p>
+	</div>
+	<div class="tab-container active">
+		<h1>标题2</h1>
+		<p>文本2</p>
+	</div>
+	<div class="tab-container active">
+		<h1>标题3</h1>
+		<p>文本3</p>
+	</div>
+	<div class="tab-container active">
+		<h1>标题4</h1>
+		<p>文本4</p>
+	</div>
+	<div class="tablists">
+		<ul>
+			<!-- <li>123</li>
+			<li>123</li>
+			<li>123</li>
+			<li>123</li> -->
+		</ul>
+		<div class="text">
+			
+		</div>
+	</div>
+	<script src="tab.js"></script>
+</body>
+</html>
